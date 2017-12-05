@@ -16,25 +16,25 @@ public class UserClient {
 
 		// Add new user - Create of CRUD
 		User user1 = new User();
-		user1.setFirstName("vgfhbg");
-		user1.setLastName("Caghghgfgfg");
+		user1.setFirstName("Chema");
+		user1.setLastName("Rosales G");
 		try {
-			Date dob = new SimpleDateFormat("yyyy-MM-dd").parse("1995-01-01");
+			Date dob = new SimpleDateFormat("yyyy-MM-dd").parse("1998-03-31");
 			user1.setDob(dob);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		user1.setEmail("john@sample.com");
+		user1.setEmail("chemajose98@hotmail.com");
 		User user2 = new User();
-		user2.setFirstName("Robin");
-		user2.setLastName("RC");
+		user2.setFirstName("Wilmer");
+		user2.setLastName("Johnson");
 		try {
-			Date dob = new SimpleDateFormat("yyyy-MM-dd").parse("1975-01-01");
+			Date dob = new SimpleDateFormat("yyyy-MM-dd").parse("2050-10-18");
 			user2.setDob(dob);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		user2.setEmail("robin@sample.com");
+		user2.setEmail("gymirwindir@gmail.com");
 
 		userService.addUser(user1);
 		userService.addUser(user2);
@@ -55,7 +55,8 @@ public class UserClient {
 		System.out.println(retrivedUser.getDob());
 
 		// Update user - Update of CRUD
-		user1.setEmail("johnUpdated@sample.com");
+		user1.setFirstName("Fernando Gutierrez");
+		user1.setEmail("josemaria@hotmail.com");
 		user1.setId(1);
 		userService.updateUser(user1);
 
